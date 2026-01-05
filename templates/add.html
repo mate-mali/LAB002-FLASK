@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+<!--     
+
+    <script>
+    function addMovie(movieTitle, movieYear, movieActors) {
+        var li = document.createElement("li")
+        li.innerHTML = "<input type='checkbox'> " + movieTitle + ", " + movieYear + ", " + movieActors;
+        document.getElementById('inputlist').appendChild(li)
+        console.log("Added this thingy here: " + movieTitle + ", " + movieYear + ", " + movieActors)
+    } -->
+<!-- 
+    function deleteMovieOld(ul) {
+
+        for (var i=0; i <ul.getElementsByTagName('li').length; i=i+1){
+            var checkedx = ul.getElementsByTagName('li')[i].getElementsByTagName('input')[0].checked
+            console.log("outer " + checkedx)
+            console.log('currently doing stuff for  '+ ul.getElementsByTagName('li')[i].innerText)
+            if(checkedx = true) {
+                console.log("removing row for  " + ul.getElementsByTagName('li')[i].innerText)
+                ul.removeChild(ul.childNodes[i])
+                console.log(checkedx)
+            }
+            else {
+                console.log('do nothing for '+ ul.getElementsByTagName('li')[i].innerText)
+            }
+        }
+    }
+    function deleteMovies(){
+        var checkedBoxes = document.querySelectorAll("input[type='checkbox']:checked")
+        for(i=0; i<checkedBoxes.length; i++)
+            console.log(i + " " + checkedBoxes[i].checked)
+    } -->
+
+
+</script>
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+  font-size: 15px;
+}
+
+header {
+  padding-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  background: #270355;
+  color: white;
+  font-size: 15px;
+}
+
+main {
+  padding: 20px;
+  text-align: left;
+  background: #FFFFFF;
+  color: graphite;
+  font-size: 15px;
+}
+
+footer {
+  padding-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  color: white;
+  font-size: 15px;
+}
+
+h2 {
+  font-size: 18px
+}
+
+</style>
+</head>
+<body>
+    <header>
+        
+        <div class="header">
+            <h1>Moje Ulubione filmy</h1></h>
+            <h3>Które bardzo lubię oglądać</h3></h>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+			<h2>Dodawanie nowych tytułów</h2>
+            <form method="POST" action="/addMovies">
+                <label for="mtitle">Title:</label>
+                <input type="text" id="mtitle" name="title"><br><br>
+                <label for="myear">Year:</label>
+                <input type="text" id="myear" name="year"><br><br>
+                <label for="mactors">Actors:</label>
+                <input type="text" id="mactors" name="actors"><br><br>
+                <input type="submit", value="Dodaj film do bazy">
+            </form>
+            <br>
+            
+        </div>
+        <ul id="inputlist">
+        <!-- <li></li> -->
+        </ul>
+
+    </main>
+    <footer>
+        <div class="container">
+            <a href = '/'> <- Wroc Do Strony Domowej</a>
+        </div>
+    </footer>
+</body>
+</html>

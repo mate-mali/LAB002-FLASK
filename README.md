@@ -1,0 +1,5 @@
+To start this application:
+1. Go to .venv/Scripts/ and select activate script to actibate virtual environment and rnable this venv in your IDE (this was built on linux mint so it moght not necessarily want to work with Windows, but then new venv can be established bu installing packages from requirements.txt in this project)
+1a. It can be also re-initialised using uv, cause this is the the package manager i used while developing this project.
+2. Launch main.py and check what ip address for the hosted server will be returned - in Mint case it defaults to 127.0.0.1 - port is fixed at 5000 because it was easier to work with VS Code's counterintuitive debigging configuration file this way.
+3. Copy ip and port to your browser of preference to enjoy this humble achievement in Web Application Development.
